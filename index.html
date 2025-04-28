@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Produtos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <img class="image" src="./images/mercado.webp" alt="">
+        <div class="content__card">
+           
+            <h1 class="title">Cadastro de Produtos do Super Mercado</h1>
+            <form class="form">
+
+                <label class="tipo" for="nome">Nome do Produto:</label>
+                <input class="campo" type="text" id="nome" name="nome" required>
+
+                <label  class="tipo" for="preco">Preço (R$):</label>
+                <input class="campo" type="number" id="preco" name="preco" min="0" step="0.01" required>
+
+                <label  class="tipo" for="quantidade">Quantidade:</label>
+                <input class="campo" type="number" id="quantidade" name="quantidade" min="0" required>
+
+                <div class="opcoes">
+                    <label  class="tipo" for="categoria">Categoria de Produtos:</label>
+                    <select class="categoria" name="categoria" id="categoria">
+        
+                        <option value="inicial">-</option>
+                        <option value="alimentos">Alimentos</option>
+                        <option value="bebidas">Bebidas</option>
+                        <option value="outros">Eletrônicos</option>
+                        <option value="outros">Higiene Pessoal</option>
+                        <option value="outros">Acessórios</option>
+                        <option value="outros">Movéis</option>
+                        <option value="outros">Outros</option>
+        
+                    </select>
+        
+                </div>
+            
+                <button class="btn">Cadastrar Produto</button>
+                <p class="feedback">Produto cadastrado com sucesso!😎</p>
+            
+            </div>
+            </form>
+    </div>
+
+    <script src="./script.js""></script>
+</body>
+</html>
